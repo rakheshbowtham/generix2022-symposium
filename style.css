@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+}
+@-webkit-keyframes h1 {
+  0% {
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #EC5AE2, 0 0 40px #EC5AE2, 0 0 50px #EC5AE2, 0 0 60px #EC5AE2, 0 0 70px #EC5AE2;
+}
+  
+  100% {
+    text-shadow: 0 0 20px #000, 0 0 30px #000, 0 0 40px #7F3CBA, 0 0 50px #7F3CBA, 0 0 60px #7F3CBA, 0 0 70px #7F3CBA, 0 0 80px #7F3CBA;
+  }
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg);
+    background-position:center;
+    background-size:cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    margin-left: 5%;
+}
+.col{
+    flex-basis: 50%;
+}
+h1{
+    color:#68B3F4;
+    margin-left: -50px;
+    font-size:90px;
+    -webkit-animation: h1 0.5s ease-in-out infinite alternate;
+    -moz-animation: h1 0.5s ease-in-out infinite alternate;
+    animation: h1 0.5s ease-in-out infinite alternate;
+}
+p{
+    color:#68B3F4;
+    font-size:50px;
+    line-height: 50px;
+}
+.row1{
+    display: flex;
+    grid-gap: 50px;
+}
+.but1{
+    width: 180px;
+    color: #000;
+    font-size: 20px;
+    padding: 12px 0;
+    background-color: #68B3F4; 
+    border: 3px solid #cc27e2;
+    box-shadow: inset 0 0 1em 0 #cc27e2, 0 0 1em 0 #cc27e2;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    position:relative;
+    transition: background 100ms linear ;
+}
+.but1::before{
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    background: #cc27e2;
+    top: 120%;
+    left 0%;
+    width: 75%;
+    height: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(0.9,0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+    
+}
+.but1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 1.5em 1em #a018b2;
+    opacity: 0;
+}
+.but1:hover{
+    background: #ce50de;
+    color: black;
+}
+.but1:hover::after{
+    opacity:1;
+}
+.card{
+    width: 220px;
+    height: 190px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin:10px 15px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 1em 0 #cc27e2, 0 0 1em 0 #cc27e2;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(images/paperpres.png);
+    color: #d641ea;
+    font-size: 13px;
+}
+.card2{
+    background-image: url(images/quiz.png);
+    color: #68B3F4;
+    font-size: 13px;
+}
+.card3{
+    background-image: url(images/project.png);
+    color: #2abdd0;
+    font-size: 13px;
+}
+.card4{
+    background-image: url(images/debug.png);
+    color: #000;
+    font-size: 13px;
+}
+.card5{
+    background-image: url(images/connection.png);
+    color: #b968f4;
+    font-size: 13px;
+}
+.card6{
+    background-image: url(images/college.png);
+    color: #000;
+    font-size: 13px;
+}
+.card:hover{
+    box-shadow: inset 0 0 2em 0 #cc27e2, 0 0 3em 0 #cc27e2;
+    transform: translateY(-10px);
+}
+@media (max-width: 600px){
+    .container{
+        margin-left: 0px;
+        overflow: auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 50px;
+        margin-left: 10px;
+        margin-top: 60px; 
+    }
+    p{
+        font-size: 25;
+        margin-left: 10px;
+    }
+    .but1{
+        width: 110px;
+        color: #000;
+        font-size: 12px;
+        padding: 12px 0;
+        background-color: #68B3F4; 
+        border: 3px solid #cc27e2;
+        box-shadow: inset 0 0 1em 0 #cc27e2, 0 0 1em 0 #cc27e2;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 10px;
+        margin-bottom: 60px
+    }
+    .row1{
+        margin-left: 10px;
+        grid-gap: 15px;
+    }
+    .card{
+        font-size:10px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
