@@ -5,11 +5,11 @@
 }
 @-webkit-keyframes h1 {
   0% {
-    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #EC5AE2, 0 0 40px #EC5AE2, 0 0 50px #EC5AE2, 0 0 60px #EC5AE2, 0 0 70px #EC5AE2;
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #2840f4, 0 0 40px #2840f4, 0 0 50px #2840f4, 0 0 60px #2840f4, 0 0 70px #2840f4;
 }
   
   100% {
-    text-shadow: 0 0 20px #000, 0 0 30px #000, 0 0 40px #7F3CBA, 0 0 50px #7F3CBA, 0 0 60px #7F3CBA, 0 0 70px #7F3CBA, 0 0 80px #7F3CBA;
+    text-shadow: 0 0 20px #000, 0 0 30px #000, 0 0 40px #6947f7, 0 0 50px #6947f7, 0 0 60px #6947f7, 0 0 70px #6947f7, 0 0 80px #6947f7;
   }
 }
 .container{
@@ -26,9 +26,10 @@
     display: flex;
     height: 88%;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 0%;
 }
 .col{
+    margin-top: 80px;
     flex-basis: 50%;
 }
 h1{
@@ -41,7 +42,7 @@ h1{
 }
 p{
     color:#68B3F4;
-    font-size:50px;
+    font-size:30px;
     line-height: 50px;
 }
 .row1{
@@ -54,8 +55,8 @@ p{
     font-size: 20px;
     padding: 12px 0;
     background-color: #68B3F4; 
-    border: 3px solid #cc27e2;
-    box-shadow: inset 0 0 1em 0 #cc27e2, 0 0 1em 0 #cc27e2;
+    border: 3px solid #2840f4;
+    box-shadow: inset 0 0 1em 0 #2840f4, 0 0 1em 0 #2840f4;
     border-radius: 20px;
     outline: none;
     margin-top: 30px;
@@ -67,9 +68,9 @@ p{
     content: "";
     pointer-events: none;
     position: absolute;
-    background: #cc27e2;
+    background: #2840f4;
     top: 120%;
-    left 0%;
+    left: 0%;
     width: 75%;
     height: 100%;
     transform: perspective(1em) rotateX(40deg) scale(0.9,0.35);
@@ -85,19 +86,19 @@ p{
     bottom: 0;
     right: 0;
     border-radius: 20px;
-    box-shadow: 0 0 1.5em 1em #a018b2;
+    box-shadow: 0 0 1.5em 1em #2840f4;
     opacity: 0;
 }
 .but1:hover{
-    background: #ce50de;
+    background: #6e7ef5;
     color: black;
 }
 .but1:hover::after{
     opacity:1;
 }
 .card{
-    width: 220px;
-    height: 190px;
+    width: 210px;
+    height: 180px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -106,41 +107,41 @@ p{
     margin:10px 15px;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 1em 0 #cc27e2, 0 0 1em 0 #cc27e2;
+    box-shadow: inset 0 0 1em 0 #2840f4, 0 0 1em 0 #2840f4;
     transition: transform 0.5s;
 }
 .card1{
     background-image: url(images/paperpres.png);
-    color: #d641ea;
-    font-size: 13px;
+    color: #2840f4;
+    font-size: 10px;
 }
 .card2{
     background-image: url(images/quiz.png);
-    color: #68B3F4;
-    font-size: 13px;
+    color: #7181f8;
+    font-size: 10px;
 }
 .card3{
-    background-image: url(images/project.png);
-    color: #2abdd0;
-    font-size: 13px;
+    background-image: url(images/project1.png);
+    color: #5faef2;
+    font-size: 10px;
 }
 .card4{
     background-image: url(images/debug.png);
     color: #000;
-    font-size: 13px;
+    font-size: 10px;
 }
 .card5{
     background-image: url(images/connection.png);
-    color: #b968f4;
-    font-size: 13px;
+    color: #2840f4;
+    font-size: 10px;
 }
 .card6{
     background-image: url(images/college.png);
     color: #000;
-    font-size: 13px;
+    font-size: 10px;
 }
 .card:hover{
-    box-shadow: inset 0 0 2em 0 #cc27e2, 0 0 3em 0 #cc27e2;
+    box-shadow: inset 0 0 2em 0 #001efd, 0 0 3em 0 #001efd;
     transform: translateY(-10px);
 }
 @media (max-width: 600px){
