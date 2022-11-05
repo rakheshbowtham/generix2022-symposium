@@ -47,7 +47,6 @@ p{
 }
 .row1{
     display: flex;
-    justify-content: space-between;
     grid-gap: 50px;
 }
 .but1{
