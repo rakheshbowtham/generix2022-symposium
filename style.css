@@ -45,7 +45,7 @@ p{
     font-size:30px;
     line-height: 50px;
 }
-.row1{
+.row{
     display: flex;
     grid-gap: 50px;
 }
