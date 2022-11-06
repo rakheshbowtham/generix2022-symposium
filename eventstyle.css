@@ -40,6 +40,7 @@
     color:#F996EF;
 }
 h2{
+    width: 200%;
     padding-left: 120px;
     color: #68B3F4;
 }
@@ -130,6 +131,29 @@ h2{
 }
 .insta{
     cursor: pointer;;
+}
+li::marker{
+    color: #68B3F4;
+}
+.pp{
+    width: 200%;
+    margin-left: 110px;
+}
+.ntq{
+    width: 200%;
+    margin-left: 115px;
+}
+.prp{
+    width: 200%;
+    margin-left: 120px;
+}
+.cd{
+    width: 200%;
+    margin-left: 105px;
+}
+.c{
+    width: 200%;
+    margin-left: 97px;
 }
 @media (max-width: 600px){
     .container{
