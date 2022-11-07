@@ -155,6 +155,11 @@ li::marker{
     width: 200%;
     margin-left: 97px;
 }
+.last{
+    width: 20%;
+    display:flex;
+    justify-content: space-around;
+}
 @media (max-width: 600px){
     .container{
         margin-left: 0px;
@@ -202,6 +207,9 @@ li::marker{
     }
     h2{
         font-size: 25px;
+    }
+    .last{
+        width:70%;
     }
     
 }
